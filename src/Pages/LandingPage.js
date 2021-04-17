@@ -1,4 +1,3 @@
-import './../App.css';
 import './LandingPage.css';
 import MenuItem from '../CustomComponents/MenuItem';
 import Menu from '../CustomComponents/Menu';
