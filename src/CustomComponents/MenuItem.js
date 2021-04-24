@@ -11,7 +11,7 @@ export default function MenuItem(props){
 
   function navigate() {
     //this.setState({changePage:true})
-    history.push(props.text);
+    history.push((props.text).replace(/\s/g, ''));
   }
 
 

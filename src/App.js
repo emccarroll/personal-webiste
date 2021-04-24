@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import LandingPage from './Pages/LandingPage';
 import Interests from './Pages/Interests';
+import WorkExperience from './Pages/WorkExperience';
+import CurrentExperience from './Pages/CurrentExperience';
 import {
   BrowserRouter as Router,
   Switch,
@@ -18,8 +20,11 @@ function App() {
           <Route path="/Interests">
             <Interests />
           </Route>
-          <Route path="/users">
-            <LandingPage />
+          <Route path="/WorkExperience">
+            <WorkExperience />
+          </Route>
+          <Route path="/CurrentExperience">
+            <CurrentExperience />
           </Route>
           <Route path="/">
             <LandingPage />

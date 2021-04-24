@@ -7,12 +7,26 @@
     font-size:100px;
 }
 
+.flexCol{
+    display: flex;
+    flex-direction: column;
+}
+
 .alignFlexStart{
     align-items: flex-start;
+}
+.alignCenter{
+    align-items: center;
+}
+.justifyCenter{
+    justify-content: center;
 }
 .textcenter{
     text-align: center;
 }
 .smallPad{
     padding: 40px;
+}
+.smallMargin{
+    margin: 5px;
 }
