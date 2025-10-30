@@ -2,6 +2,7 @@
 
 import { styled } from '@mui/material/styles';
 import SimpleAccordion from '@/components/simple-accordion';
+import SectionHeader from './section-header';
 
 const PageContainer = styled('div')({
   display: 'flex',
@@ -12,13 +13,6 @@ const PageContainer = styled('div')({
   padding: '2rem',
   gap: '2rem',
 });
-
-const Header = styled('h1')(({ theme }) => ({
-  fontSize: '2.5rem',
-  marginBottom: '2rem',
-  color: theme.palette.text.primary,
-}));
-
 const AccordionContainer = styled('div')({
   width: '100%',
   maxWidth: '800px',
@@ -27,7 +21,7 @@ const AccordionContainer = styled('div')({
 export default function FuturePlansContent() {
   return (
     <PageContainer>
-      <Header>Future Plans</Header>
+      <SectionHeader title="Future Plans" />
       <AccordionContainer>
         <SimpleAccordion
           header="Short Term Goals"

@@ -2,6 +2,7 @@
 
 import { styled } from '@mui/material/styles';
 import SimpleAccordion from '@/components/simple-accordion';
+import SectionHeader from './section-header';
 
 const PageContainer = styled('div')({
   display: 'flex',
@@ -23,6 +24,7 @@ const CardsContainer = styled('div')({
 export default function CurrentExperienceContent() {
   return (
     <PageContainer>
+      <SectionHeader title="Current Experience" />
       <CardsContainer>
         <SimpleAccordion header="TA" subheader="University at Buffalo" content="Assisted in course instruction, grading, and student support." />
         <SimpleAccordion header="Software Engineer" subheader="Sonet Inc" content="Working on web platform features, unit tests, and CI/CD improvements." />

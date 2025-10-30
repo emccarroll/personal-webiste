@@ -1,7 +1,8 @@
 'use client';
 
 import { styled } from '@mui/material/styles';
-import ImgMediaCard from '@/components/img-media-card';
+import ImgMediaCard from './img-media-card';
+import SectionHeader from './section-header';
 
 const PageContainer = styled('div')({
   display: 'flex',
@@ -13,11 +14,6 @@ const PageContainer = styled('div')({
   gap: '2rem',
 });
 
-const Header = styled('h1')(({ theme }) => ({
-  fontSize: '2.5rem',
-  marginBottom: '2rem',
-  color: theme.palette.text.primary,
-}));
 
 const ProjectsGrid = styled('div')({
   display: 'grid',
@@ -30,19 +26,17 @@ const ProjectsGrid = styled('div')({
 export default function ProjectsContent() {
   return (
     <PageContainer>
-      <Header>Projects</Header>
+  <SectionHeader title="Projects" />
       <ProjectsGrid>
         <ImgMediaCard
           img="/placeholder.jpg"
           header="Personal Website"
           description="A React-based personal website showcasing my work and interests"
-          backgroundColor="dark"
         />
         <ImgMediaCard
           img="/placeholder.jpg"
           header="Future Projects"
           description="More projects coming soon..."
-          backgroundColor="dark"
         />
       </ProjectsGrid>
     </PageContainer>
